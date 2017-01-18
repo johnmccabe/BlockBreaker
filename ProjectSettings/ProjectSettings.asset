@@ -453,6 +453,7 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 1
     UNet: 1
   cloudProjectId: f8979c41-978a-4f8f-8a5a-3fb761033bdc
   projectName: BlockBreaker
