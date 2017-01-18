@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LoseCollider : MonoBehaviour {
 
+	// You can now drop the LevelManager GameObject in the UI
+	public LevelManager levelManager;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,6 +19,8 @@ public class LoseCollider : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D trigger) {
 		print ("Trigger");
+		levelManager.LoadLevel ("Win");
+
 	}
 
 	void OnCollisionEnter2D (Collision2D collider) {
