@@ -20,14 +20,11 @@ public class Brick : MonoBehaviour {
 		
 	}
 		
-	void OnCollisionEnter2D (Collision2D collider) {
-		timesHit++;
-		// TODO remove when brick removal win implemented
-		SimulateWin();
-	}
-
-	void SimulateWin ()
+	void OnCollisionEnter2D (Collision2D collider)
 	{
-		levelManager.LoadNextLevel();
+		timesHit++;
+		if (timesHit >= maxHits) {
+			Destroy (gameObject);
+		}
 	}
 }
