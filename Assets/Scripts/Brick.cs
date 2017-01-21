@@ -6,6 +6,7 @@ public class Brick : MonoBehaviour {
 
 	public Sprite[] hitSprites;
 	public static int breakableCount = 0;
+	public AudioClip crack;
 
 	private bool isBreakable;
 	private int timesHit;
@@ -28,7 +29,7 @@ public class Brick : MonoBehaviour {
 		
 	void OnCollisionEnter2D (Collision2D collider)
 	{
-//		bool isBreakable = (this.tag == "Breakable");
+		AudioSource.PlayClipAtPoint (crack, transform.position);
 		if (isBreakable) {
 			HandleHits ();
 		}
