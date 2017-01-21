@@ -27,4 +27,9 @@ public class LevelManager : MonoBehaviour {
 		Application.Quit ();
 	}
 
+	public void BrickDestroyed() {
+		if ( Brick.breakableCount <= 0 ) {
+			LoadNextLevel ();
+		}
+	}
 }
