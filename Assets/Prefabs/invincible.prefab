@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61869303264040646}
   - component: {fileID: 114655907380331252}
   m_Layer: 0
-  m_Name: 1hit
+  m_Name: invincible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240177542221350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 6.46, z: -5}
+  m_LocalPosition: {x: 8.5, y: 9.6, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9317fca6b7eb8f546a7bec75993cb08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHits: 1
+  hitSprites: []
 --- !u!212 &212204211361110870
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -100,6 +100,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 2a8dfe3abe2638148a1ebdde351eb446, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 61869303264040646}
   - component: {fileID: 114655907380331252}
   m_Layer: 0
-  m_Name: 3hit
-  m_TagString: Untagged
+  m_Name: blue
+  m_TagString: Breakable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240177542221350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.5, y: 7.22, z: 0}
+  m_LocalPosition: {x: 7.5, y: 9.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9317fca6b7eb8f546a7bec75993cb08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHits: 3
   hitSprites:
   - {fileID: 21300008, guid: 2a8dfe3abe2638148a1ebdde351eb446, type: 3}
   - {fileID: 21300010, guid: 2a8dfe3abe2638148a1ebdde351eb446, type: 3}
@@ -103,6 +102,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 2a8dfe3abe2638148a1ebdde351eb446, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.069420435, g: 0.0743676, b: 0.78676474, a: 1}
   m_FlipX: 0
   m_FlipY: 0
