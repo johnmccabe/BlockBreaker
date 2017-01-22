@@ -14,11 +14,13 @@ public class LevelManager : MonoBehaviour {
 
 	public void LoadLevel (string name) {
 		Debug.Log ("Level load requested for: " + name);
+		Brick.breakableCount = 0;
 		SceneManager.LoadScene (name);
 	}
 
 	public void LoadNextLevel () {
 		Debug.Log ("activeSceneBuildIndex " + activeSceneBuildIndex);
+		Brick.breakableCount = 0;
 		SceneManager.LoadScene(++activeSceneBuildIndex);
 	}
 
