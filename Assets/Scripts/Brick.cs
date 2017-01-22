@@ -50,8 +50,10 @@ public class Brick : MonoBehaviour {
 
 	void LoadSprites () {
 		int spriteIndex = timesHit - 1;
-		if (hitSprites[spriteIndex]) {
-			this.GetComponent<SpriteRenderer> ().sprite = hitSprites[spriteIndex];
+		if (hitSprites [spriteIndex] != null) {
+			this.GetComponent<SpriteRenderer> ().sprite = hitSprites [spriteIndex];
+		} else {
+			Debug.LogError ("Sprite at spriteIndex: " + spriteIndex + " not found");
 		}
 	}
 }
