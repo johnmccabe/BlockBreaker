@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4453047724964882}
   - component: {fileID: 212204211361110870}
-  - component: {fileID: 61869303264040646}
   - component: {fileID: 114655907380331252}
+  - component: {fileID: 60869822573054944}
   m_Layer: 0
   m_Name: blue
   m_TagString: Breakable
@@ -36,14 +36,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240177542221350}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 9.6, z: 0}
+  m_LocalPosition: {x: 8, y: 8.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61869303264040646
-BoxCollider2D:
+--- !u!60 &60869822573054944
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -54,8 +54,22 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.3203125}
+  m_Points:
+    m_Paths:
+    - - {x: 0.48008156, y: 0.16041756}
+      - {x: 0.0061388016, y: 0.16819}
+      - {x: -0.47131443, y: 0.16061115}
+      - {x: -0.4977045, y: 0.15786076}
+      - {x: -0.50227547, y: 0.13365936}
+      - {x: -0.49862862, y: -0.12916851}
+      - {x: -0.4908185, y: -0.14638424}
+      - {x: -0.47703266, y: -0.15929604}
+      - {x: 0.0003976822, y: -0.1620121}
+      - {x: 0.4755087, y: -0.15620327}
+      - {x: 0.4942627, y: -0.15326977}
+      - {x: 0.4998293, y: -0.12903404}
+      - {x: 0.501132, y: 0.13480663}
+      - {x: 0.49655724, y: 0.15326977}
 --- !u!114 &114655907380331252
 MonoBehaviour:
   m_ObjectHideFlags: 1
