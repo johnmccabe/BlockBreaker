@@ -94,6 +94,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoPlay: 0
+  minX: -0.5
+  maxX: 15.5
 --- !u!212 &212563740496482556
 SpriteRenderer:
   m_ObjectHideFlags: 1
